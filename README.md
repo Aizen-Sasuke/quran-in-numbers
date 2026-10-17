@@ -1,14 +1,13 @@
 # Quran in Numbers
 
-Static, dependency-free pages that visualise numerical patterns in the Qur'an, alongside the
+A static, dependency-free page that visualises numerical patterns in the Qur'an, alongside the
 text data used to count and cross-check them.
 
 ## Files
 
 | File | What it is |
 |------|------------|
-| `match.html` | Main visualisation (dot spheres, moon arc, 332 = 332 matrix). |
-| `match_1.html` / `match_2.html` / `match_3.html` | Larger iterations with the full verse set embedded. |
+| `index.html` | The app. Self-contained: embedded verse data, interactive reader, side-by-side comparisons, word search. No build step. |
 | `quran-uthmani-min.txt` | Uthmani Arabic text. |
 | `en.sahih.txt` | Sahih International English translation. |
 | `bn.bengali.txt` | Bengali translation. |
@@ -16,11 +15,12 @@ text data used to count and cross-check them.
 
 ## Run
 
-Open any `.html` file in a browser. There is no build step and no dependencies.
+Open `index.html` in a browser. There is no build step and no dependencies.
+Named `index.html` so GitHub Pages can serve it directly.
 
 ## Data format
 
-The translation / text files are pipe-separated, one verse per line:
+The text files are pipe-separated, one verse per line:
 
 ```
 surah|ayah|text
